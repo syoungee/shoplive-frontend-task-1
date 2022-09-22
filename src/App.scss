@@ -6,6 +6,7 @@ body {
   header {
     background-color: gray;
     color: white;
+    padding-left: calc(50% - 512px);
   }
 
   input {
@@ -13,9 +14,27 @@ body {
     margin: 2px;
   }
 
+  .input-rows {
+    width: 1024px;
+    margin: 0 auto 0 auto;
+  }
+
   .item-row {
-    margin: 16px 0;
+    margin: 16px auto 0 auto;
     border-radius: 12px;
+    width: 1024px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+  }
+
+  .image {
+    width: 100px;
+    height: 100px;
+    float: left;
+  }
+
+  .button-row {
+    float: right;
+    width: 10%;
   }
 }
