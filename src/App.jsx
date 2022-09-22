@@ -1,7 +1,18 @@
 import './App.scss';
+import { useState } from 'react';
 import { DUMMY } from './dummies';
 
 const App = () => {
+  /* TODO 1. input값 가져오기 */
+
+  /* TODO 2. localStorage에 정보 저장 */
+
+  /* TODO 3. data length */
+
+  /* TODO 4. data 수정 및 삭제 */
+
+  /* TODO 5. Refactoring */
+
   return (
     <div className="App">
       <header>SHOPLIVE</header>
