@@ -12,13 +12,16 @@
   <p>반응형 break point는 - <br/>1. Desktop (1025px ~) <br/>2. Tablet (480px ~ 1024px)<br/>3. Mobile ( ~ 480px)</p>
 
   <h3>데스크탑 (1024px ~ ) 사이즈에서는 아래 스크린샷과 같은 형태로 보이면 됩니다.</h3>
-  <img src="http://localhost:3000/1_desktop.png">
+
+![1024px~ ](./public/1_desktop.png)
 
   <h3>Tablet (480px ~ 1024px) 사이즈에서는 아래 스크린샷과 같은 형태로 보이면 됩니다.</h3>
-  <img src="http://localhost:3000/2_tablet.png" />
+
+![480px ~ 1024px](./public/2_tablet.png)
 
   <h3>Mobile (~ 480px) 사이즈에서는 아래 스크린샷과 같은 형태로 보이면 됩니다.</h3>
-  <img src="http://localhost:3000/3_mobile.png" />
+
+![~480px ](./public/3_mobile.png)
 
   <h2>문제 2.</h2>
   <p>아이템 - '추가' 기능을 구현합니다.</p>
