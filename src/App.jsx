@@ -3,7 +3,15 @@ import { useState } from 'react';
 import { DUMMY } from './dummies';
 
 const App = () => {
+  const [itemList, setItemList] = useState([]); // localStorage에 저장된 데이터
+  const [inputData, setInputData] = useState({}); // 입력한 데이터
+  const [searchItem, setSearchItem] = useState(null); // 검색할 데이터
+
   /* TODO 1. input값 가져오기 */
+  const onChange = (e) => {
+    setInputData({ ...inputData, [e.target.id]: [e.target.value] });
+    console.log(inputData);
+  };
 
   /* TODO 2. localStorage에 정보 저장 */
 
@@ -22,9 +30,9 @@ const App = () => {
           <button>검색</button>
         </div>
         <div>
-          <input placeholder="title" />
-          <input placeholder="likeCount" />
-          <input placeholder="imageUrl" />
+          <input placeholder="title" onChange={(e) => onChange(e)} id="title" required={true} />
+          <input placeholder="likeCount" onChange={(e) => onChange(e)} id="likeCount" required={true} />
+          <input placeholder="imageUrl" onChange={(e) => onChange(e)} id="imageUrl" required={true} />
           <button>추가</button>
         </div>
 
