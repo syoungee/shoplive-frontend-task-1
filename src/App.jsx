@@ -35,8 +35,9 @@ const App = () => {
           <input placeholder="imageUrl" onChange={(e) => onChange(e)} id="imageUrl" required={true} />
           <button>추가</button>
         </div>
-
+        <br />
         <div>아이템 - 총 5 개</div>
+        <br />
       </div>
       <div className="wrap-items">
         {DUMMY.map((item) => (
