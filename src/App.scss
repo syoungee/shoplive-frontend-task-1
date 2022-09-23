@@ -7,6 +7,8 @@ body {
     background-color: gray;
     color: white;
     padding-left: calc(50% - 512px);
+    height: 40px;
+    line-height: 40px;
   }
 
   input {
@@ -16,7 +18,7 @@ body {
 
   .input-rows {
     width: 1024px;
-    margin: 0 auto 0 auto;
+    margin: 10px auto 0 auto;
   }
 
   .item-row {
@@ -45,11 +47,19 @@ body {
     header {
       background-color: gray;
       color: white;
+      padding-left: calc(5% + 10px);
+      height: 40px;
+      line-height: 40px;
     }
 
     input {
       padding: 4px 8px;
       margin: 2px;
+    }
+
+    .input-rows {
+      margin-top: 10px;
+      margin-left: calc(5% + 10px);
     }
 
     .wrap-items {
@@ -90,7 +100,7 @@ body {
       height: auto;
       color: white;
       background-color: black;
-      opacity: 0.65;
+      opacity: 0.7;
       z-index: 2;
       padding: 16px 8px 16px 8px;
     }
