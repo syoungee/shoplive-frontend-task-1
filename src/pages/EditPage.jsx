@@ -1,9 +1,11 @@
-import './App.scss';
+import './EditPage.scss';
 import { useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-const EditPage = (props) => {
-  const item = props;
-  const [inputData, setInputData] = useState({ ...item }); // 입력한 데이터
+const EditPage = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [inputData, setInputData] = useState({ ...location.state });
 
   const onChange = (e) => {
     setInputData({ ...inputData, [e.target.id]: e.target.value });
@@ -12,29 +14,30 @@ const EditPage = (props) => {
   return (
     <div>
       <header>SHOPLIVE</header>
-      <div key={item.id} className="item-row">
-        <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
-        <div class="textfield">
-          <div className="likes">LIKES♡ {item.likeCount}</div>
+      {console.log(inputData)}
+      <div key={inputData.id} className="item-row">
+        <div style={{ backgroundImage: `url(` + inputData.imageUrl + `)` }} className="image" />
+        <div className="textfield">
+          <div className="likes">LIKES♡ {inputData.likeCount}</div>
           <div className="title">
-            <b>{item.title}</b>
+            <b>{inputData.title}</b>
             <br />
-            {new Date(item.createdAt).toLocaleString()}
+            {inputData.createdAt}
           </div>
-        </div>
-        <div className="button-row">
-          <button className="button-modify">수정</button>
-          <button className="button-remove">제거</button>
         </div>
       </div>
       <div>
         <form action="submit">
           title:
-          <input type="text" />
+          <input type="text" id="title" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
           likes: {}
-          <input type="number" />
+          <input type="number" id="likeCount" defaultValue={inputData?.likeCount ? inputData.likeCount : ''} onChange={onChange} required={true} />
           imageUrl:
-          <input type="url" />
+          <input type="url" id="imageUrl" defaultValue={inputData?.imageUrl ? inputData.imageUrl : ''} onChange={onChange} required={true} />
+          <br />
+          <button className="button-modify" onClick={() => {}}>
+            수정하기
+          </button>
         </form>
       </div>
     </div>
