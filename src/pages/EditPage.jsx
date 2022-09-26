@@ -65,7 +65,7 @@ const EditPage = () => {
               editData();
             }}
           >
-            수정하기
+            저장하기
           </button>
           <button
             className="button-cancel"
@@ -73,7 +73,7 @@ const EditPage = () => {
               navigate(`/`);
             }}
           >
-            취소
+            취소하기
           </button>
         </form>
       </div>
