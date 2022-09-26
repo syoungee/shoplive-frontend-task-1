@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import MainPage from './pages/MainPage';
 import EditPage from './pages/EditPage';
 
-const App = () => {
+const Router = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Routes>
@@ -13,4 +13,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Router;
