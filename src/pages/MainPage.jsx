@@ -1,8 +1,10 @@
-import './App.scss';
+import './MainPage.scss';
 import { useState, useEffect } from 'react';
 import { DUMMY } from '../dummies';
+import { useNavigate } from 'react-router-dom';
 
 const MainPage = () => {
+  const navigate = useNavigate();
   const [itemList, setItemList] = useState(null); // localStorage에 저장된 데이터
   const [inputData, setInputData] = useState({}); // 입력한 데이터
   const [searchItem, setSearchItem] = useState(null); // 검색할 데이터
@@ -50,7 +52,9 @@ const MainPage = () => {
   };
 
   /* TODO 4. data 수정 및 삭제 */
-
+  const toEditPage = (item) => {
+    navigate(`/edit/${item.id}`, { state: { ...item } });
+  };
   /* TODO 5. Refactoring */
 
   return (
@@ -91,7 +95,7 @@ const MainPage = () => {
           DUMMY?.map((item) => (
             <div key={item.id} className="item-row">
               <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
-              <div class="textfield">
+              <div className="textfield">
                 <div className="likes">LIKES♡ {item.likeCount}</div>
                 <div className="title">
                   <b>{item.title}</b>
@@ -100,8 +104,17 @@ const MainPage = () => {
                 </div>
               </div>
               <div className="button-row">
-                <button className="button-modify">수정</button>
-                <button className="button-remove">제거</button>
+                <button
+                  className="button-modify"
+                  onClick={() => {
+                    toEditPage(item);
+                  }}
+                >
+                  수정
+                </button>
+                <button className="button-remove" onClick={() => {}}>
+                  제거
+                </button>
               </div>
             </div>
           ))
