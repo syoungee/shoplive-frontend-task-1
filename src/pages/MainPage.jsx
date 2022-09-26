@@ -48,7 +48,7 @@ const MainPage = () => {
     const dataList = JSON.parse(myData);
     setItemList(dataList);
 
-    return dataList.length;
+    return dataList?.length;
   };
 
   /* TODO 4. data 수정 및 삭제 */
