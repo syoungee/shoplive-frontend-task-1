@@ -1,6 +1,6 @@
 {
   "name": "shoplive-project",
-  "homepage": "https://syoungee.github.io/shoplive-frontend-task-1/",
+  "homepage": "https://syoungee.github.io/shoplive-frontend-task-1/public",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
