@@ -29,13 +29,13 @@ const EditPage = () => {
       <div className="submit-form">
         <form action="submit">
           title:
-          <input type="text" id="title" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
+          <input type="text" id="title" size="35" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
           <br />
           likes:
           <input type="number" id="likeCount" defaultValue={inputData?.likeCount ? inputData.likeCount : ''} onChange={onChange} required={true} />
           <br />
           imageUrl:
-          <input type="url" id="imageUrl" defaultValue={inputData?.imageUrl ? inputData.imageUrl : ''} onChange={onChange} required={true} />
+          <input type="url" id="imageUrl" size="70" defaultValue={inputData?.imageUrl ? inputData.imageUrl : ''} onChange={onChange} required={true} />
           <br />
           <br />
           <button className="button-modify" onClick={() => {}}>
