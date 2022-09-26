@@ -33,7 +33,7 @@ const EditPage = () => {
   };
 
   return (
-    <div>
+    <div className="EditPage">
       <header>SHOPLIVE</header>
       {console.log(inputData)}
       <div key={inputData.id} className="item-row">
@@ -66,6 +66,14 @@ const EditPage = () => {
             }}
           >
             수정하기
+          </button>
+          <button
+            className="button-cancel"
+            onClick={() => {
+              navigate(`/`);
+            }}
+          >
+            취소
           </button>
         </form>
       </div>
