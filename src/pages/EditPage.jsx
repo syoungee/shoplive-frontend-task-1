@@ -22,18 +22,21 @@ const EditPage = () => {
           <div className="title">
             <b>{inputData.title}</b>
             <br />
-            {inputData.createdAt}
+            {new Date(inputData.createdAt).toLocaleString()}
           </div>
         </div>
       </div>
-      <div>
+      <div className="submit-form">
         <form action="submit">
           title:
           <input type="text" id="title" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
-          likes: {}
+          <br />
+          likes:
           <input type="number" id="likeCount" defaultValue={inputData?.likeCount ? inputData.likeCount : ''} onChange={onChange} required={true} />
+          <br />
           imageUrl:
           <input type="url" id="imageUrl" defaultValue={inputData?.imageUrl ? inputData.imageUrl : ''} onChange={onChange} required={true} />
+          <br />
           <br />
           <button className="button-modify" onClick={() => {}}>
             수정하기
