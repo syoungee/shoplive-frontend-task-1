@@ -92,7 +92,7 @@ const MainPage = () => {
             </div>
           </div>
         ))} */
-          DUMMY?.map((item) => (
+          itemList?.map((item) => (
             <div key={item.id} className="item-row">
               <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
               <div className="textfield">
