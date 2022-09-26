@@ -11,6 +11,27 @@ const EditPage = () => {
     setInputData({ ...inputData, [e.target.id]: e.target.value });
   };
 
+  const editData = () => {
+    // Validation check
+    if (!inputData.title || !inputData.likeCount || !inputData.imageUrl) {
+      console.log('모든 값을 입력해야합니다.');
+      return;
+    }
+
+    // localStorage에 새로운 데이터 수정해서 저장
+    let temp_list = JSON.parse(localStorage.getItem('itemList'));
+    let target_id = -1;
+    temp_list.map((item, index) => {
+      if (item.id === inputData.id) {
+        temp_list[index] = inputData;
+        target_id = index;
+      }
+    });
+    // 수정 후 메인 페이지로 이동
+    localStorage.setItem('itemList', JSON.stringify(temp_list));
+    navigate(`/`);
+  };
+
   return (
     <div>
       <header>SHOPLIVE</header>
@@ -38,7 +59,12 @@ const EditPage = () => {
           <input type="url" id="imageUrl" size="70" defaultValue={inputData?.imageUrl ? inputData.imageUrl : ''} onChange={onChange} required={true} />
           <br />
           <br />
-          <button className="button-modify" onClick={() => {}}>
+          <button
+            className="button-modify"
+            onClick={() => {
+              editData();
+            }}
+          >
             수정하기
           </button>
         </form>
