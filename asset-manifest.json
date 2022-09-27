@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/shoplive-frontend-task-1/static/css/main.078eda55.chunk.css",
-    "main.js": "/shoplive-frontend-task-1/static/js/main.2316e6ec.chunk.js",
-    "main.js.map": "/shoplive-frontend-task-1/static/js/main.2316e6ec.chunk.js.map",
+    "main.js": "/shoplive-frontend-task-1/static/js/main.3ef0d82d.chunk.js",
+    "main.js.map": "/shoplive-frontend-task-1/static/js/main.3ef0d82d.chunk.js.map",
     "runtime-main.js": "/shoplive-frontend-task-1/static/js/runtime-main.f1923c51.js",
     "runtime-main.js.map": "/shoplive-frontend-task-1/static/js/runtime-main.f1923c51.js.map",
     "static/js/2.b8ab0e41.chunk.js": "/shoplive-frontend-task-1/static/js/2.b8ab0e41.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.f1923c51.js",
     "static/js/2.b8ab0e41.chunk.js",
     "static/css/main.078eda55.chunk.css",
-    "static/js/main.2316e6ec.chunk.js"
+    "static/js/main.3ef0d82d.chunk.js"
   ]
 }
