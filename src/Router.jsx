@@ -4,7 +4,7 @@ import EditPage from './pages/EditPage';
 
 const Router = () => {
   return (
-    <HashRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="/edit/:id" element={<EditPage />} />
