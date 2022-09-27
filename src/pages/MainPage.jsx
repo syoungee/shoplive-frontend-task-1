@@ -41,8 +41,7 @@ const MainPage = () => {
     setItemCount(getItemLength());
   };
 
-  /* TODO 3. data length */
-
+  // data length
   const getItemLength = () => {
     const myData = localStorage.getItem('itemList');
     const dataList = JSON.parse(myData);
@@ -51,11 +50,11 @@ const MainPage = () => {
     return dataList?.length;
   };
 
-  /* TODO 4. data 수정 및 삭제 */
   const toEditPage = (item) => {
     navigate(`/edit/${item.id}`, { state: { ...item } });
   };
-  /* TODO 5. Refactoring */
+
+  // data 삭제
 
   return (
     <div className="App">
@@ -76,8 +75,7 @@ const MainPage = () => {
         <br />
       </div>
       <div className="wrap-items">
-        {
-          /* {itemList?.map((item) => (
+        {DUMMY.map((item) => (
           <div key={item.id} className="item-row">
             <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
             <div className="likes">LIKES♡ {item.likeCount}</div>
@@ -91,34 +89,33 @@ const MainPage = () => {
               <button className="button-remove">제거</button>
             </div>
           </div>
-        ))} */
-          itemList?.map((item) => (
-            <div key={item.id} className="item-row">
-              <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
-              <div className="textfield">
-                <div className="likes">LIKES♡ {item.likeCount}</div>
-                <div className="title">
-                  <b>{item.title}</b>
-                  <br />
-                  {new Date(item.createdAt).toLocaleString()}
-                </div>
-              </div>
-              <div className="button-row">
-                <button
-                  className="button-modify"
-                  onClick={() => {
-                    toEditPage(item);
-                  }}
-                >
-                  수정
-                </button>
-                <button className="button-remove" onClick={() => {}}>
-                  제거
-                </button>
+        ))}
+        {itemList?.map((item) => (
+          <div key={item.id} className="item-row">
+            <div style={{ backgroundImage: `url(` + item.imageUrl + `)` }} className="image" />
+            <div className="textfield">
+              <div className="likes">LIKES♡ {item.likeCount}</div>
+              <div className="title">
+                <b>{item.title}</b>
+                <br />
+                {new Date(item.createdAt).toLocaleString()}
               </div>
             </div>
-          ))
-        }
+            <div className="button-row">
+              <button
+                className="button-modify"
+                onClick={() => {
+                  toEditPage(item);
+                }}
+              >
+                수정
+              </button>
+              <button className="button-remove" onClick={() => {}}>
+                제거
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
