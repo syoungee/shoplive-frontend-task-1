@@ -20,7 +20,13 @@ const MainPage = () => {
 
   // input값 가져오기
   const onChange = (e) => {
-    setInputData({ ...inputData, [e.target.id]: e.target.value });
+    if (e.target.id === 'search') {
+      // 검색 input
+      setSearchItem(e.target.value);
+    } else {
+      // title, likeCount, imageUrl input
+      setInputData({ ...inputData, [e.target.id]: e.target.value });
+    }
   };
 
   // localStorage에 입력한 아이템 저장
@@ -69,13 +75,24 @@ const MainPage = () => {
     setItemCount(getItemLength());
   };
 
+  // 아이템 검색 기능
+  const searchItems = () => {
+    const result = itemList.filter((item) => {
+      return item.title.includes(searchItem);
+    });
+    console.log(result);
+    console.log(searchItem);
+
+    navigate(`/search/${searchItem}`, { state: [...result] });
+  };
+
   return (
-    <div className="App">
+    <div className="MainPage">
       <header>SHOPLIVE</header>
       <div className="input-rows">
         <div>
-          <input placeholder="검색" />
-          <button>검색</button>
+          <input placeholder="검색" type="text" onChange={(e) => onChange(e)} id="search" />
+          <button onClick={() => searchItems()}>검색</button>
         </div>
         <div>
           <input placeholder="title" type="text" onChange={(e) => onChange(e)} id="title" required={true} />
