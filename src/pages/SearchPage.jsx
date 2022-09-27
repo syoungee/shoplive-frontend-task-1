@@ -11,12 +11,10 @@ const SearchPage = () => {
   useEffect(() => {
     console.log(itemList);
     setItemCount(getItemLength());
-    console.log(itemCount);
   }, []);
 
   // 아이템 갯수
   const getItemLength = () => {
-    console.log(itemList.length);
     return itemList.length;
   };
 

@@ -29,7 +29,7 @@ const EditPage = () => {
     });
     // 수정 후 메인 페이지로 이동
     localStorage.setItem('itemList', JSON.stringify(temp_list));
-    navigate(`/shoplive-frontend-task-1/`);
+    navigate(`/`);
   };
 
   return (
@@ -38,7 +38,7 @@ const EditPage = () => {
         <a href="/shoplive-frontend-task-1/">SHOPLIVE</a>
       </div>
       <div className="nav-menu">
-        <a href="/shoplive-frontend-task-1/">HOME</a>
+        <a href="/">HOME</a>
       </div>
       <div key={inputData.id} className="item-row">
         <div style={{ backgroundImage: `url(` + inputData.imageUrl + `)` }} className="image" />
