@@ -23,10 +23,10 @@ const SearchPage = () => {
   return (
     <div className="SearchPage">
       <div className="header">
-        <a href="/">SHOPLIVE</a>
+        <a href="/shoplive-frontend-task-1/">SHOPLIVE</a>
       </div>
       <div className="nav-menu">
-        <a href="/">HOME</a>
+        <a href="/shoplive-frontend-task-1/">HOME</a>
       </div>
       <div className="input-rows">아이템 - 총 {itemList.length} 개</div>
       <div className="wrap-items">
