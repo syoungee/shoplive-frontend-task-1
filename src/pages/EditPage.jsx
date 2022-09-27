@@ -38,7 +38,7 @@ const EditPage = () => {
         <a href="/shoplive-frontend-task-1/">SHOPLIVE</a>
       </div>
       <div className="nav-menu">
-        <a href="/">HOME</a>
+        <a href="/shoplive-frontend-task-1/">HOME</a>
       </div>
       <div key={inputData.id} className="item-row">
         <div style={{ backgroundImage: `url(` + inputData.imageUrl + `)` }} className="image" />
