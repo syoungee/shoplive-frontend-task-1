@@ -22,8 +22,12 @@ const SearchPage = () => {
 
   return (
     <div className="SearchPage">
-      <div className="header">SHOPLIVE</div>
-      <div className="nav-menu">HOME</div>
+      <div className="header">
+        <a href="/">SHOPLIVE</a>
+      </div>
+      <div className="nav-menu">
+        <a href="/">HOME</a>
+      </div>
       <div className="input-rows">아이템 - 총 {itemList.length} 개</div>
       <div className="wrap-items">
         {itemList?.map((item) => (

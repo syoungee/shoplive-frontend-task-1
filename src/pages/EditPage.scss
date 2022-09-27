@@ -1,11 +1,25 @@
 .EditPage {
-  header {
-    width: 100%;
+  .header {
+    width: 45%;
     background-color: gray;
     color: white;
     padding-left: 5%;
     height: 40px;
     line-height: 40px;
+    float: left;
+  }
+
+  .nav-menu {
+    text-align: right;
+    padding-right: 5%;
+    width: 45%;
+    background-color: gray;
+    color: white;
+    height: 40px;
+    margin: 0px;
+    line-height: 40px;
+    float: left;
+    margin-bottom: 15px;
   }
 
   input {
@@ -15,6 +29,15 @@
 
   button {
     margin-left: 5px;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: pink;
   }
 
   .item-row {

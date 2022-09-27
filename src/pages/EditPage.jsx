@@ -14,7 +14,7 @@ const EditPage = () => {
   const editData = () => {
     // Validation check
     if (!inputData.title || !inputData.likeCount || !inputData.imageUrl) {
-      console.log('모든 값을 입력해야합니다.');
+      alert('모든 값을 입력해야합니다.');
       return;
     }
 
@@ -34,8 +34,12 @@ const EditPage = () => {
 
   return (
     <div className="EditPage">
-      <header>SHOPLIVE</header>
-      {console.log(inputData)}
+      <div className="header">
+        <a href="/">SHOPLIVE</a>
+      </div>
+      <div className="nav-menu">
+        <a href="/">HOME</a>
+      </div>
       <div key={inputData.id} className="item-row">
         <div style={{ backgroundImage: `url(` + inputData.imageUrl + `)` }} className="image" />
         <div className="textfield">

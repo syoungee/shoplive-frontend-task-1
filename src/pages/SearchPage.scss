@@ -22,6 +22,15 @@
     float: left;
   }
 
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  a:hover {
+    color: pink;
+  }
+
   .input-rows {
     width: 100%;
     float: left;

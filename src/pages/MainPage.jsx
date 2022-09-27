@@ -33,7 +33,7 @@ const MainPage = () => {
   const saveData = () => {
     // Validation check
     if (!inputData.title || !inputData.likeCount || !inputData.imageUrl) {
-      console.log('모든 값을 입력해야합니다.');
+      alert('모든 값을 입력해야합니다.');
       return;
     }
 
