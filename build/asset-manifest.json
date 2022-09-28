@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/shoplive-frontend-task-1/static/css/main.9f8065ba.chunk.css",
+    "main.css": "/shoplive-frontend-task-1/static/css/main.cd97e036.chunk.css",
     "main.js": "/shoplive-frontend-task-1/static/js/main.795cf6e3.chunk.js",
     "main.js.map": "/shoplive-frontend-task-1/static/js/main.795cf6e3.chunk.js.map",
     "runtime-main.js": "/shoplive-frontend-task-1/static/js/runtime-main.f1923c51.js",
@@ -8,13 +8,13 @@
     "static/js/2.1fe5002e.chunk.js": "/shoplive-frontend-task-1/static/js/2.1fe5002e.chunk.js",
     "static/js/2.1fe5002e.chunk.js.map": "/shoplive-frontend-task-1/static/js/2.1fe5002e.chunk.js.map",
     "index.html": "/shoplive-frontend-task-1/index.html",
-    "static/css/main.9f8065ba.chunk.css.map": "/shoplive-frontend-task-1/static/css/main.9f8065ba.chunk.css.map",
+    "static/css/main.cd97e036.chunk.css.map": "/shoplive-frontend-task-1/static/css/main.cd97e036.chunk.css.map",
     "static/js/2.1fe5002e.chunk.js.LICENSE.txt": "/shoplive-frontend-task-1/static/js/2.1fe5002e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f1923c51.js",
     "static/js/2.1fe5002e.chunk.js",
-    "static/css/main.9f8065ba.chunk.css",
+    "static/css/main.cd97e036.chunk.css",
     "static/js/main.795cf6e3.chunk.js"
   ]
 }
