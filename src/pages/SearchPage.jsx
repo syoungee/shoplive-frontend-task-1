@@ -1,25 +1,20 @@
 import './SearchPage.scss';
 import { useState, useEffect } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import highLightText from '../components/HighLight';
 
 const SearchPage = () => {
   const location = useLocation();
-  const navigate = useNavigate();
-  const [itemList, setItemList] = useState([...location.state.itemArray]);
+  const [itemList] = useState([...location.state.itemArray]);
   const [itemCount, setItemCount] = useState(0);
-  const [searchText, setSearchText] = useState(location.state.searchText);
+  const [searchText] = useState(location.state.searchText);
 
   useEffect(() => {
-    console.log(itemList);
+    const getItemLength = () => {
+      return itemList.length;
+    };
     setItemCount(getItemLength());
-  }, []);
-
-  // 아이템 갯수
-  const getItemLength = () => {
-    return itemList.length;
-  };
-
+  }, [itemList]);
   return (
     <div className="SearchPage">
       <div className="header">

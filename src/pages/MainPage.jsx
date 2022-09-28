@@ -112,9 +112,9 @@ const MainPage = () => {
               <div className="likes">LIKES♡ {item.likeCount}</div>
               <div className="title">
                 <b>
-                  {item.title.split('\n').map((text) => {
+                  {item.title.split('\n').map((text, i) => {
                     return (
-                      <span>
+                      <span key={i}>
                         {text}
                         <br />
                       </span>

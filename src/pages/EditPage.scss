@@ -100,6 +100,7 @@
     right: 10px;
     z-index: 3;
   }
+
   input {
     padding: 4px 8px;
     margin: 2px;
@@ -108,5 +109,8 @@
   .submit-form {
     width: 75%;
     margin: 0 auto 0 auto;
+  }
+  textarea {
+    padding: 4px 8px;
   }
 }

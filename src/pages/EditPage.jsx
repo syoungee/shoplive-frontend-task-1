@@ -9,23 +9,22 @@ const EditPage = () => {
 
   const onChange = (e) => {
     setInputData({ ...inputData, [e.target.id]: e.target.value });
+    console.log(inputData);
   };
 
   const editData = () => {
     // Validation check
     if (!inputData.title || !inputData.likeCount || !inputData.imageUrl) {
       alert('모든 값을 입력해야합니다.');
-      return;
     }
 
     // localStorage에 새로운 데이터 수정해서 저장
     let temp_list = JSON.parse(localStorage.getItem('itemList'));
-    let target_id = -1;
     temp_list.map((item, index) => {
       if (item.id === inputData.id) {
         temp_list[index] = inputData;
-        target_id = index;
       }
+      return temp_list[index];
     });
     // 수정 후 메인 페이지로 이동
     localStorage.setItem('itemList', JSON.stringify(temp_list));
@@ -63,7 +62,8 @@ const EditPage = () => {
       <div className="submit-form">
         <form action="submit">
           title:
-          <input type="text" id="title" size="35" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
+          <br />
+          <textarea type="text" id="title" rows="5" cols="30" defaultValue={inputData?.title ? inputData.title : ''} onChange={onChange} required={true} />
           <br />
           likes:
           <input type="number" id="likeCount" defaultValue={inputData?.likeCount ? inputData.likeCount : ''} onChange={onChange} required={true} />
