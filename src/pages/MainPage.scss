@@ -29,7 +29,7 @@ body {
     overflow: hidden;
   }
 
-  @media (min-width: 1220px) {
+  @media (min-width: 1025px) {
     .image {
       width: 150px;
       height: 130px;
@@ -68,7 +68,7 @@ body {
     }
   }
 
-  @media (max-width: 1219px) {
+  @media (max-width: 1024px) {
     header {
       background-color: gray;
       color: white;
@@ -149,7 +149,7 @@ body {
       z-index: 6;
     }
   }
-  @media (max-width: 479px) {
+  @media (max-width: 480px) {
     header {
       width: 100%;
       background-color: gray;
