@@ -95,7 +95,7 @@ const MainPage = () => {
         <div>
           <input placeholder="title" type="text" onChange={(e) => onChange(e)} id="title" required={true} />
           <input placeholder="likeCount" type="number" onChange={(e) => onChange(e)} id="likeCount" required={true} />
-          <input placeholder="imageUrl" type="imgage" onChange={(e) => onChange(e)} id="imageUrl" required={true} />
+          <input placeholder="imageUrl" type="url" onChange={(e) => onChange(e)} id="imageUrl" required={true} />
           <button onClick={(e) => saveData(e)}>추가</button>
         </div>
         <br />

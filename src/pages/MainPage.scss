@@ -17,11 +17,11 @@ body {
 
   .input-rows {
     padding-left: calc(50% - 512px);
-    margin: 10px auto 0 auto;
+    margin: 10px auto 0px auto;
   }
 
   .item-row {
-    margin: 16px auto 0 auto;
+    margin: 16px auto 0px auto;
     height: 130px;
     border-radius: 12px;
     width: 1024px;
@@ -92,9 +92,8 @@ body {
       float: left;
       border-radius: 12px;
       position: relative;
-      width: 43%;
-      margin-left: 10px;
-      margin-right: 10px;
+      width: 47%;
+      margin: 5px;
       height: 300px;
     }
 
@@ -151,7 +150,7 @@ body {
   }
   @media (max-width: 480px) {
     header {
-      width: 100%;
+      width: 95%;
       background-color: gray;
       color: white;
       padding-left: 5%;
@@ -160,26 +159,32 @@ body {
     }
 
     .image {
+      width: 100%;
       background-size: cover;
       background-position: center center;
     }
 
     .input-rows {
+      padding-top: 10px;
       padding-left: 5%;
-      margin: 10px auto 0px auto;
-      width: 100%;
+      padding-right: 5%;
+      margin: 2px 0px;
+      width: 90%;
     }
 
     .wrap-items {
-      width: 95%;
-      margin: 0 auto;
+      float: left;
+      width: 90%;
+      margin: 0px 5%;
     }
 
     .item-row {
       margin-bottom: 3px;
       border-radius: 12px;
       width: 90%;
+      margin: 0px auto 3px auto;
       height: 300px;
+      float: none;
     }
   }
 }
