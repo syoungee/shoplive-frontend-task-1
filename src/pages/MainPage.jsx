@@ -83,7 +83,7 @@ const MainPage = () => {
     console.log(result);
     console.log(searchItem);
 
-    navigate(`/search/${searchItem}`, { state: [...result] });
+    navigate(`/search/${searchItem}`, { state: { itemArray: [...result], searchText: searchItem } });
   };
 
   return (

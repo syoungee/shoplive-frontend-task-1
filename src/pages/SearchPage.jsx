@@ -1,12 +1,14 @@
 import './SearchPage.scss';
 import { useState, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import highLightText from '../components/HighLight';
 
 const SearchPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [itemList, setItemList] = useState([...location.state]);
+  const [itemList, setItemList] = useState([...location.state.itemArray]);
   const [itemCount, setItemCount] = useState(0);
+  const [searchText, setSearchText] = useState(location.state.searchText);
 
   useEffect(() => {
     console.log(itemList);
@@ -26,7 +28,7 @@ const SearchPage = () => {
       <div className="nav-menu">
         <a href="/shoplive-frontend-task-1/">HOME</a>
       </div>
-      <div className="input-rows">아이템 - 총 {itemList.length} 개</div>
+      <div className="input-rows">아이템 - 총 {itemCount} 개</div>
       <div className="wrap-items">
         {itemList?.map((item) => (
           <div key={item.id} className="item-row">
@@ -34,7 +36,7 @@ const SearchPage = () => {
             <div className="textfield">
               <div className="likes">LIKES♡ {item.likeCount}</div>
               <div className="title">
-                <b>{item.title}</b>
+                <b>{highLightText(item.title, searchText)}</b>
                 <br />
                 {new Date(item.createdAt).toLocaleString()}
               </div>
