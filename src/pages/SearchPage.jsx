@@ -15,6 +15,7 @@ const SearchPage = () => {
     };
     setItemCount(getItemLength());
   }, [itemList]);
+
   return (
     <div className="SearchPage">
       <div className="header">

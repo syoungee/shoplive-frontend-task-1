@@ -80,8 +80,6 @@ const MainPage = () => {
     const result = itemList.filter((item) => {
       return item.title.includes(searchItem);
     });
-    console.log(result);
-    console.log(searchItem);
 
     navigate(`/search/${searchItem}`, { state: { itemArray: [...result], searchText: searchItem } });
   };

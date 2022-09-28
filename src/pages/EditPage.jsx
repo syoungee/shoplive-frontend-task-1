@@ -9,7 +9,6 @@ const EditPage = () => {
 
   const onChange = (e) => {
     setInputData({ ...inputData, [e.target.id]: e.target.value });
-    console.log(inputData);
   };
 
   const editData = () => {
