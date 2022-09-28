@@ -111,10 +111,19 @@ const MainPage = () => {
             <div className="textfield">
               <div className="likes">LIKES♡ {item.likeCount}</div>
               <div className="title">
-                <b>{item.title}</b>
+                <b>
+                  {item.title.split('\n').map((text) => {
+                    return (
+                      <span>
+                        {text}
+                        <br />
+                      </span>
+                    );
+                  })}
+                </b>
                 <br />
-                {new Date(item.createdAt).toLocaleString()}
               </div>
+              <p className="date">{new Date(item.createdAt).toLocaleString()}</p>
             </div>
             <div className="button-row">
               <button

@@ -36,7 +36,16 @@ const SearchPage = () => {
             <div className="textfield">
               <div className="likes">LIKES♡ {item.likeCount}</div>
               <div className="title">
-                <b>{highLightText(item.title, searchText)}</b>
+                <b>
+                  {item.title.split('\n').map((text, idx) => {
+                    return (
+                      <span key={idx}>
+                        {highLightText(text, searchText)}
+                        <br />
+                      </span>
+                    );
+                  })}
+                </b>
                 <br />
                 {new Date(item.createdAt).toLocaleString()}
               </div>

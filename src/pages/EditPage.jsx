@@ -45,7 +45,16 @@ const EditPage = () => {
         <div className="textfield">
           <div className="likes">LIKES♡ {inputData.likeCount}</div>
           <div className="title">
-            <b>{inputData.title}</b>
+            <b>
+              {inputData.title.split('\n').map((text, idx) => {
+                return (
+                  <span key={idx}>
+                    {text}
+                    <br />
+                  </span>
+                );
+              })}
+            </b>
             <br />
             {new Date(inputData.createdAt).toLocaleString()}
           </div>
