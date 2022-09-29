@@ -138,3 +138,7 @@ https://user-images.githubusercontent.com/22606199/192940271-6a5993d4-28ef-47c0-
 - [x] 5. 아이템 수정 기능 구현(수정 페이지 자유롭게 구현, 취소, 저장 기능 제공)
 - [x] 6. 검색 기능 구현
 - [x] 7. 검색 기능 구현 - Highlight 기능 추가
+
+## ✨ 회고
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=syoungee&color=dark)](https://velog.io/@syoungee)
+
