@@ -78,6 +78,48 @@
 
 [github-page 보러가기](https://syoungee.github.io/shoplive-frontend-task-1/)
 
+<details><summary>sample data</summary>
+
+```json
+  1)
+  title:
+  시간의 바깥
+  서로를 닮아 기울어진 삶
+  소원을 담아 차오르는 달 하려다 만
+  괄호 속의 말 이제야 음 음 음
+
+  likeCount: 6789
+
+  imageUrl: https://velog.velcdn.com/images/syoungee/post/219b2cf0-fac7-4a42-91ef-6c468202b169/image.JPG
+
+  2)
+  title:
+  너랑 나
+  눈 깜박하면 어른이 될 거에요
+  날 알아보겠죠 그댄 기억하겠죠
+  그래 기묘했던 아이(아이)
+  손 틈새로 비치는 네 모습(아!이!유!) 참 좋다
+
+  likeCount: 29345
+
+  imageUrl: https://velog.velcdn.com/images/syoungee/post/efed142c-9657-4e18-b538-10c21451d6dd/image.JPG
+
+  3)
+  title:
+  Eight
+  우리는 오렌지 태양 아래
+  그림자 없이 함께 춤을 춰
+  정해진 이별 따위는 없어
+  아름다웠던 그 기억에서 만나 Forever young
+
+  likeCount: 1004
+
+  imageUrl: https://velog.velcdn.com/images/syoungee/post/1a42d86e-97c0-4298-b493-93d7bcee8f86/image.JPG
+
+```
+
+</details>
+
 ## 🔑 구현 기능
 
 <b>✔️ 7가지 기능 구현 완료</b>
@@ -89,3 +131,7 @@
 - [x] 5. 아이템 수정 기능 구현(수정 페이지 자유롭게 구현, 취소, 저장 기능 제공)
 - [x] 6. 검색 기능 구현
 - [x] 7. 검색 기능 구현 - Highlight 기능 추가
+
+```
+
+```
