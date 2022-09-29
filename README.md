@@ -70,14 +70,6 @@
   <p>"동해물과 백<span style="background-color:yellow; color:red; fontWeight:bold;" >두산</span>이 마르고 닳도록..."</p>
 </details>
 
-
-https://user-images.githubusercontent.com/22606199/192939778-359b9c7b-4c92-4525-9c73-fa55a3a3a2c2.mp4
-
-https://user-images.githubusercontent.com/22606199/192939794-fa05c51b-4b0f-49d9-888c-4af215600245.mp4
-
-https://user-images.githubusercontent.com/22606199/192940271-6a5993d4-28ef-47c0-9990-de16407249d6.MP4
-
-
 ## ⏳ 개발 기간
 
 2022/09/22 ~ 2022/09/29
@@ -127,6 +119,13 @@ https://user-images.githubusercontent.com/22606199/192940271-6a5993d4-28ef-47c0-
 ```
 
 </details>
+
+
+https://user-images.githubusercontent.com/22606199/192939778-359b9c7b-4c92-4525-9c73-fa55a3a3a2c2.mp4
+
+https://user-images.githubusercontent.com/22606199/192939794-fa05c51b-4b0f-49d9-888c-4af215600245.mp4
+
+https://user-images.githubusercontent.com/22606199/192940271-6a5993d4-28ef-47c0-9990-de16407249d6.MP4
 
 ## 🔑 구현 기능
 
