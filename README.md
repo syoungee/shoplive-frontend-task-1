@@ -140,5 +140,5 @@ https://user-images.githubusercontent.com/22606199/192940271-6a5993d4-28ef-47c0-
 - [x] 7. 검색 기능 구현 - Highlight 기능 추가
 
 ## ✨ 회고
-[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=syoungee&color=dark)](https://velog.io/@syoungee)
+[![Velog's GitHub stats](https://velog-readme-stats.vercel.app/api?name=syoungee&color=dark)](https://velog.io/@syoungee/%ED%9A%8C%EA%B3%A0-%EC%82%AC%EC%A7%84%EC%B2%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EA%B5%AC%ED%98%84-%EA%B3%BC%EC%A0%95)
 
