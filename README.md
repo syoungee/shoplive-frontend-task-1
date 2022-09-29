@@ -76,6 +76,8 @@
 
 ## 📷 프로젝트 시연
 
+[github-page 보러가기](https://syoungee.github.io/shoplive-frontend-task-1/)
+
 ## 🔑 구현 기능
 
 <b>✔️ 7가지 기능 구현 완료</b>
