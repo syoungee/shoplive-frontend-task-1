@@ -51,4 +51,4 @@
   <p>검색결과 화면에서 '검색어'가 입력된 부분만 스타일을 변경하여 Highlight 되도록 해봅시다.</p>
 
   <p>ex - '두산' 이라고 검색어를 입력했을 때,</p>
-  <p>"동해물과 백<span style={{backgroundColor:'yellow', color: 'red', fontWeight:'bold'}} >두산</span>이 마르고 닳도록..."</p>
+  <p>"동해물과 백<span style="background-color:yellow; color:red; fontWeight:bold;" >두산</span>이 마르고 닳도록..."</p>
