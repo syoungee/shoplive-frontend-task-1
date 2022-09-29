@@ -46,9 +46,17 @@ const MainPage = () => {
       temp_list.push({ ...inputData, id: new Date().valueOf(), createdAt: new Date().valueOf() });
       localStorage.setItem('itemList', JSON.stringify(temp_list));
     }
-
+    // 입력값 초기화
+    initInputValues();
     // 아이템 갯수
     setItemCount(getItemLength());
+  };
+
+  // textarea, input 초기화
+  const initInputValues = () => {
+    document.getElementById('title').value = '';
+    document.getElementById('likeCount').value = '';
+    document.getElementById('imageUrl').value = '';
   };
 
   // 아이템 갯수
