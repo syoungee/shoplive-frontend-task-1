@@ -80,7 +80,7 @@
 
 <details><summary>sample data</summary>
 
-```json
+```text
   1)
   title:
   시간의 바깥
