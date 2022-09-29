@@ -92,14 +92,14 @@ const MainPage = () => {
           <input placeholder="검색" type="text" onChange={(e) => onChange(e)} id="search" />
           <button onClick={() => searchItems()}>검색</button>
         </div>
-        <div>
-          <input placeholder="title" type="text" onChange={(e) => onChange(e)} id="title" required={true} />
+        <div className="input-area">
+          <textarea rows="3" cols="18" placeholder="title" type="text" onChange={(e) => onChange(e)} id="title" required={true} />
           <input placeholder="likeCount" type="number" onChange={(e) => onChange(e)} id="likeCount" required={true} />
           <input placeholder="imageUrl" type="url" onChange={(e) => onChange(e)} id="imageUrl" required={true} />
           <button onClick={(e) => saveData(e)}>추가</button>
         </div>
         <br />
-        <div>아이템 - 총 {itemCount} 개</div>
+        <div className="total-items">아이템 - 총 {itemCount} 개</div>
         <br />
       </div>
       <div className="wrap-items">

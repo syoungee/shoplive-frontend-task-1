@@ -15,18 +15,35 @@ body {
     margin: 2px;
   }
 
+  .input-area {
+    float: left;
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+  }
+
   .input-rows {
     padding-left: calc(50% - 512px);
     margin: 10px auto 0px auto;
   }
 
   .item-row {
-    margin: 16px auto 0px auto;
+    margin: 8px auto 8px auto;
     height: 130px;
     border-radius: 12px;
     width: 1024px;
     box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
     overflow: hidden;
+  }
+
+  .total-items {
+    margin-top: 80px;
+    width: 80%;
+  }
+
+  textarea {
+    margin: 2px;
+    display: flex;
   }
 
   @media (min-width: 1025px) {
@@ -42,7 +59,6 @@ body {
       float: left;
       width: 60%;
     }
-
     .button-row {
       float: right;
       width: 10%;
@@ -148,6 +164,7 @@ body {
       z-index: 6;
     }
   }
+
   @media (max-width: 480px) {
     header {
       width: 95%;
@@ -176,6 +193,11 @@ body {
       float: left;
       width: 90%;
       margin: 0px 5%;
+    }
+
+    .total-items {
+      margin-top: 110px;
+      width: 80%;
     }
 
     .item-row {
